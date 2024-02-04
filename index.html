@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cours HTML</title>
+    <!-- titre de la page -->
+    <!-- icon de longlé -->
+    <link rel="shortcut icon" href="/logo-head.png" />
+  </head>
+  <body>
+    <nav>
+      <!-- UL = Unordered List -->
+      <ul>
+        <li>Accueil</li>
+        <li>Boutique</li>
+        <li> <a href="#form">Formulaire</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Ceci est le titre Principale</h1>
+      <p>
+        Texte classique <em>texte en italique</em>
+        <strong>teste en gras.</strong>
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iste
+        similique delectus suscipit maiores magnam id, eius voluptatem illum!
+        Dolor neque commodi, quam vel adipisci unde ab quaerat voluptates
+        accusantium?
+      </p>
+    </header>
+    <main>
+      <section>
+         <h2>Order liste</h2>
+         <ol>
+            <li>Ceci est une</li>
+            <li>liste dans</li>
+            <li>l'ordre</li>
+         </ol>
+      </section>
+      <section>
+         <h3>Image en HTML 
+         </h3>
+         <img src="/Japon.jpg" alt="Image du Japon">
+         <div>
+            <h4>Tableau</h4>
+            <table border="4"
+               cellpadding="10"
+               cellspacing="4"
+               style="text-align: center;">
+               <thead>
+                  <tr>
+                     <th>Col 1</th>
+                      <th>Col 2</th>
+                     <th>Col 3</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td rowspan="2">cell 1</td>
+                     <td>cell 2</td>
+                     <td>cell 3</td>
+                  </tr>
+                  <tr>
+                     <td colspan="2">cell 4</td>
+                  </tr>
+
+               </tbody>
+            </table>
+
+         
+         </div>
+         <div>
+            <h5><span>&#8594;</span>Les liens</h5>
+            <!-- _blank permet de créer un nouvel onglet -->
+            <a href="https://htmlcheatsheet.com" target="_blank"> HTML Cheat Sheet</a>
+         </div>
+         <div>
+            <h6><i>&#128190;</i>Vidéos</h6>
+            <video src="/video.mp4" height="300px" autoplay muted loop></video>
+            </div>
+      </section>
+      <section id="form">
+         <h2>Les formulaires</h2>
+         <form action="">
+            <!-- input de type texte -->
+            <!-- "for"et "id" permettent de lier le label à l'input -->
+            <label for="name">Nom</label>
+            <input type="text" id="name"placeholder="Entez votre nom">
+            <br>
+            <!-- input de type age -->
+            <label for="age">Age</label>
+            <input type="number" id="age"placeholder="Entrez votre age" value="18">
+            <br>
+            <!-- input de type select -->
+            <label for="gender">Genre</label>
+            <select name="" id="gender">
+               <option value="Homme">Homme</option>
+               <!-- Commande selected valeur par défault -->
+               <option selected=selected value="Femme">Femme</option>
+               <option value="Autre">Autre</option>
+            </select>
+            <!-- unput de type radio -->
+            <div>
+               <!-- checked cocher par défault -->
+               <input type="radio" name="type" id="human" checked>
+               <label for="human">Humain</label>
+
+               <input type="radio" name="type" id="dog">
+               <label for="dog">Chien</label>
+            
+               <input type="radio" name="type" id="cat">
+               <label for="cat">Chat</label>
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Votre message..."></textarea>
+
+            <br>
+            <!-- Input de type checkbox -->
+            <input type="checkbox" name="" id="cgv">
+            <label for="cgv">Accepter les conditions générales.</label>
+
+            <br>
+            
+            <!-- input de type submit permet de valider -->
+            <input type="submit" value="Validez">
+
+            <br>
+
+         </form>
+         <button>ceci est un bouton</button>
+      </section>
+    </main>
+         <!-- Mail et envoi de fichiers -->
+    <footer>
+            <a href="mailto:contact@javachrist.fr">Contactez moi !</a>
+
+<br>
+
+            <a href="/notice.txt" download="Notice">Télécharger la notice.</a>
+    </footer>
+  </body>
+</html>
